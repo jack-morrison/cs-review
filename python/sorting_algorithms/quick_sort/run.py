@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # run.py
 # demonstrates a quick sort using quick_sort.py
 
