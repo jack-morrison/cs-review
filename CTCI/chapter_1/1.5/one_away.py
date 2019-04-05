@@ -3,18 +3,18 @@
 def main():
 
     welcomeString = """
-Give me two strings, and I'll tell you if they're one edit away!
+        Give me two strings, and I'll tell you if they're one edit away!
 
-There are 3 types of edits.
-1) Replacement (ex. `pale` --> `bale`)
-2) Insertion   (ex. `pale` --> `pales`)
-3) Deletion    (ex. `pale` --> `pae`)
-"""
+        There are 3 types of edits.
+        1) Replacement (ex. `pale` --> `bale`)
+        2) Insertion   (ex. `pale` --> `pales`)
+        3) Deletion    (ex. `pale` --> `pae`)
+        """
 
     print(welcomeString)
 
-    stringA = input("Input stringA: ")
-    stringB = input("Input stringB: ")
+    stringA = input("\tInput stringA: ")
+    stringB = input("\tInput stringB: ")
 
     # Insertion and Deletion will be considered together, as they're identical opposite operations.
     # Replacement will be considered separately, and only in the case where stringA and stringB have the same length.
@@ -24,7 +24,7 @@ There are 3 types of edits.
     else:
         oneEditAway = evalInsertOrDelete(stringA, stringB)
 
-    print("'{}' and '{}' are one edit away?: {}".format(stringA, stringB, oneEditAway))
+    print("\n\t'{}' and '{}' are one edit away?: {}\n".format(stringA, stringB, oneEditAway))
 
     return 1
 
